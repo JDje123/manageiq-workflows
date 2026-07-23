@@ -30,7 +30,7 @@
       "Type": "Task",
       "Resource": "manageiq://email",
       "Parameters": {
-        "to": "jeeva.m@pinakastra.cloud",
+        "to": "$$.Requester.email",
         "subject": "ManageIQ - Service Provision Completed",
         "body": "Hello,\n\nYour requested service has been successfully provisioned.\n\nService Status : SUCCESS\nProvisioned By : ManageIQ\nWorkflow : post-provision-notify\n\nThank you for using the ManageIQ Service Catalog."
       },
