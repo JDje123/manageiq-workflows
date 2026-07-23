@@ -2,13 +2,12 @@
   "Comment": "Post Provision Workflow",
   "StartAt": "LogStart",
   "States": {
-
     "LogStart": {
       "Type": "Task",
       "Resource": "manageiq://log",
       "Parameters": {
         "level": "info",
-        "message": "Provisioning completed."
+        "message": "Provisioning completed successfully."
       },
       "Next": "TagService"
     },
@@ -31,12 +30,11 @@
       "Type": "Task",
       "Resource": "manageiq://email",
       "Parameters": {
-        "to": "$$.Requester.email",
-        "subject": "Provision Completed",
-        "body": "Your VM has been created successfully."
+        "to": "manuttan5223@gmail.com",
+        "subject": "ManageIQ - Ubuntu VM Provision Completed",
+        "body": "Hello,\n\nYour Ubuntu Linux VM has been successfully provisioned through the ManageIQ Service Catalog.\n\nStatus : Success\nProvisioned By : ManageIQ\nWorkflow : post-provision-notify\n\nThank you."
       },
       "End": true
     }
-
   }
 }
