@@ -30,9 +30,9 @@
       "Type": "Task",
       "Resource": "manageiq://email",
       "Parameters": {
-        "to": "manuttan5223@gmail.com",
-        "subject": "ManageIQ - Ubuntu VM Provision Completed",
-        "body": "Hello,\n\nYour Ubuntu Linux VM has been successfully provisioned through the ManageIQ Service Catalog.\n\nStatus : Success\nProvisioned By : ManageIQ\nWorkflow : post-provision-notify\n\nThank you."
+        "to": "jeeva.m@pinakastra.cloud",
+        "subject": "ManageIQ - Service Provision Completed",
+        "body": "Hello,\n\nYour requested service has been successfully provisioned.\n\nService Status : SUCCESS\nProvisioned By : ManageIQ\nWorkflow : post-provision-notify\n\nThank you for using the ManageIQ Service Catalog."
       },
       "End": true
     }
